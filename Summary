@@ -1,0 +1,24 @@
+# Customer Churn Prediction Project
+
+## Project Overview
+This project focuses on predicting customer churn using machine learning. A Random Forest classifier was employed, and the project was deployed using Flask with API endpoints for making predictions.
+
+## Key Points
+
+### Approaches Tried:
+1. **MinMaxScaler vs Standard Scaler**: StandardScaler provided better results.
+2. **Scoring (Accuracy vs Recall)**: Accuracy scoring during grid search yielded better results.
+3. **Feature Engineering**: Dividing age into bins as a feature engineering step led to worse results.
+
+### Novelty of the Project:
+- **Deployment**: The model was deployed using a Flask application, with endpoints created for API usage.
+- **API Testing**: The API was successfully tested with Postman, accepting inputs in JSON format.
+- **Outlier Removal**: By removing some outliers, the model's accuracy increased by 2%.
+- **Performance**: The Random Forest model achieved **86% accuracy** and **50% recall**, while the null accuracy was **79%**.
+  
+### Exploratory Data Analysis (EDA):
+- Important features identified: `Age`, `Geography`, `Gender`, `NumOfProducts`. This was confirmed during the modeling phase.
+
+---
+
+Feel free to use this structure and adjust it according to your repository’s style!
