@@ -12,13 +12,13 @@ This project focuses on predicting customer churn using machine learning. A Rand
 
 ### Novelty of the Project:
 - **Deployment**: The model was deployed using a Flask application, with endpoints created for API usage.
-- **API Testing**: The API was successfully tested with Postman, accepting inputs in JSON format.
-- **Outlier Removal**: By removing some outliers, the model's accuracy increased by 2%.
-- **Performance**: The Random Forest model achieved **86% accuracy** and **50% recall**, while the null accuracy was **79%**.
+- **API Testing**: The API was successfully tested with Postman, and inputs were accepted in JSON format.
+- **Outlier Removal**: The model's accuracy increased by 2% by removing some outliers.
+- **Performance**: The Random Forest model achieved **87% accuracy** and **49% recall**, while the null accuracy was **80%**.
   
 ### Exploratory Data Analysis (EDA):
-- Important features identified: `Age`, `Geography`, `Gender`, `NumOfProducts`. This was confirmed during the modeling phase.
+- Important features identified: `Age`, `Geography`, `Balance`, `NumOfProducts`. This was confirmed during the modeling phase.
 
 ---
 
-Feel free to use this structure and adjust it according to your repository’s style!
+Feel free to adjust this structure according to your repository’s style!
