@@ -1,24 +1,22 @@
-# Customer Churn Prediction Project
+Project Overview
+This project aims to predict customer churn using machine learning. I used a Decision Tree classifier and deployed the model with Flask, creating API endpoints for making predictions.
 
-## Project Overview
-This project focuses on predicting customer churn using machine learning. A Random Forest classifier was employed, and the project was deployed using Flask with API endpoints for making predictions.
+Key Highlights
 
-## Key Points
+Methods Used:
 
-### Approaches Tried:
-1. **MinMaxScaler vs Standard Scaler**: StandardScaler provided better results.
-2. **Scoring (Accuracy vs Recall)**: Accuracy scoring during grid search yielded better results.
-3. **Feature Engineering**: Dividing age into bins as a feature engineering step led to worse results.
+Scaling Methods: I tested both MinMaxScaler and StandardScaler and StandardScaler gave better results.
+Accuracy vs Recall: During grid search, optimizing for accuracy gave better overall performance than recall.
+Feature Engineering: I tried dividing the Age feature into bins, but this reduced the model’s performance.
 
-### Novelty of the Project:
-- **Deployment**: The model was deployed using a Flask application, with endpoints created for API usage.
-- **API Testing**: The API was successfully tested with Postman, and inputs were accepted in JSON format.
-- **Outlier Removal**: The model's accuracy increased by 2% by removing some outliers.
-- **Performance**: The Random Forest model achieved **87% accuracy** and **49% recall**, while the null accuracy was **80%**.
-  
-### Exploratory Data Analysis (EDA):
-- Important features identified: `Age`, `Geography`, `Balance`, `NumOfProducts`. This was confirmed during the modeling phase.
+Unique Aspects of the Project:
 
----
+Model Deployment: The model was deployed using a Flask app with API endpoints for real-time predictions.
+API Testing: The API was tested using Postman, with inputs provided in JSON format.
+Outlier Removal: By removing some outliers, I improved the model’s accuracy by 2%.
+Performance: The Random Forest model achieved 87% accuracy and 49% recall. The baseline (null) accuracy was 80%.
+To further improve recall, I used undersampling by removing 3,000 instances of non-churn customers (output=0). This helped reduce model bias and a Decision Tree model with undersampling achieved 82% accuracy and 60% recall, compared to the null accuracy of 71%.
 
-Feel free to adjust this structure according to your repository’s style!
+
+Exploratory Data Analysis (EDA):
+Key features that influenced churn: Age, Geography, Balance, and NumOfProducts. These features were confirmed to be important during the modeling phase.
