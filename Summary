@@ -5,7 +5,7 @@ Key Highlights
 
 Methods Used:
 
-Scaling Methods: I tested both MinMaxScaler and StandardScaler and StandardScaler gave better results.
+Scaling Methods: I tested both MinMaxScaler and StandardScaler,StandardScaler gave better results.
 Accuracy vs Recall: During grid search, optimizing for accuracy gave better overall performance than recall.
 Feature Engineering: I tried dividing the Age feature into bins, but this reduced the model’s performance.
 
@@ -15,7 +15,8 @@ Model Deployment: The model was deployed using a Flask app with API endpoints fo
 API Testing: The API was tested using Postman, with inputs provided in JSON format.
 Outlier Removal: By removing some outliers, I improved the model’s accuracy by 2%.
 Performance: The Random Forest model achieved 87% accuracy and 49% recall. The baseline (null) accuracy was 80%.
-To further improve recall, I used undersampling by removing 3,000 instances of non-churn customers (output=0). This helped reduce model bias and a Decision Tree model with undersampling achieved 82% accuracy and 60% recall, compared to the null accuracy of 71%.
+To further improve recall, I used undersampling by removing 3,000 instances of non-churn customers (output=0). This helped reduce model bias and a Decision Tree model with undersampling achieved 82% accuracy and 60% recall, compared to the null accuracy of 79%.
+I also tried oversampling using SMOTE which achieved 84% accuracy and 68% recall, compared to the null accuracy of 79%.
 
 
 Exploratory Data Analysis (EDA):
